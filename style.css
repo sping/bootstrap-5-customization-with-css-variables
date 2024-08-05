@@ -6,11 +6,13 @@
     [data-bs-theme=light] {
         --app-body-bg: #F1F2F5;  
         --app-card-bg: var(--bs-white);
+        --app-input-bg: var(--bs-white);
     }
 
     [data-bs-theme=dark] {
         --app-body-bg: #121212;
         --app-card-bg: #222;
+        --app-input-bg: #333;
     }
 
     :root {
@@ -25,6 +27,7 @@
         --bs-primary-rgb: var(--color-brand-rgb);
         --bs-font-sans-serif: var(--font-brand);
         --bs-border-radius: 1.25rem;
+        --bs-border-color: #C2C2C2;
         --bs-box-shadow: 0px 1px 1px rgba(25, 10, 67, 0.02),
             0px 5px 4px rgba(25, 10, 67, 0.03),
             0px 12px 9px rgba(25, 10, 67, 0.05),
@@ -35,6 +38,9 @@
         --bs-link-color: var(--color-brand);
         --bs-link-color-rgb: var(--color-brand-rgb);
         --bs-link-hover-color-rgb: var(--color-brand-hover-rgb);
+
+        --btn-hover-color: hsl(from rgb(var(--color-brand-rgb)) h calc(s - 8) calc(l - 20));
+
     }
 
     h1, .h1, 
@@ -50,6 +56,7 @@
         --bs-btn-padding-x: 1.5rem;
         --bs-btn-padding-y: .75rem;
         --bs-btn-border-radius: .75rem;
+        font-weight: 500;
     }
 
     .btn-sm {
@@ -58,23 +65,24 @@
     }
 
     .btn-primary {
-        --hover-color: hsl(from rgb(var(--color-brand-rgb)) h calc(s - 8) calc(l - 8));
-
         --bs-btn-bg: var(--color-brand);
         --bs-btn-border-color: var(--color-brand);
-        --bs-btn-hover-bg: var(--hover-color);
-        --bs-btn-hover-border-color: var(--hover-color);
-        --bs-btn-active-bg: var(--hover-color);
-        --bs-btn-active-border-color: var(--hover-color);
+        --bs-btn-hover-bg: var(--btn-hover-color);
+        --bs-btn-hover-border-color: var(--btn-hover-color);
+        --bs-btn-active-bg: var(--btn-hover-color);
+        --bs-btn-active-border-color: var(--btn-hover-color);
+    }
+
+    .btn-link {
+        --bs-btn-hover-color: var(--btn-hover-color);
+        --bs-btn-active-color: var(--btn-hover-color);
     }
 
     .btn-outline-primary {
-        --hover-color: hsl(from rgb(var(--color-brand-rgb)) h calc(s - 8) calc(l - 8));
-
         --bs-btn-color: var(--color-brand);
         --bs-btn-border-color: var(--color-brand);
-        --bs-btn-hover-bg: var(--hover-color);
-        --bs-btn-hover-border-color: var(--hover-color);
+        --bs-btn-hover-bg: var(--btn-hover-color);
+        --bs-btn-hover-border-color: var(--btn-hover-color);
         --bs-btn-active-bg: var(--color-brand);
         --bs-btn-active-border-color: var(--color-brand);
         --bs-btn-disabled-color: var(--color-brand);
@@ -122,6 +130,21 @@
 
     [data-bs-theme=dark] .dropdown-toggle::after {
         background-image: url('../img/arrow-dark.svg');
+    }
+
+    .form-control {
+        border-radius: .25rem;
+        padding: .75rem 1rem;
+        background-color: var(--app-input-bg);
+
+        &:focus {
+            border-color: var(--color-brand);
+            box-shadow: 0 0 0 .25rem hsl(from rgb(var(--color-brand-rgb)) h calc(s - 8) calc(l + 30));
+        }
+    }
+
+    .form-label {
+        font-weight: 500;
     }
 
     .nav-link {
