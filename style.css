@@ -95,6 +95,7 @@
         --bs-dropdown-bg: var(--bs-white);
         --bs-dropdown-border-width: 0;
         --bs-dropdown-font-size: .875rem;
+        --bs-dropdown-link-active-bg: var(--color-brand);
     }
 
     [data-bs-theme=dark] .dropdown-menu {
