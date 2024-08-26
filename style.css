@@ -40,6 +40,8 @@
         --bs-link-hover-color-rgb: var(--color-brand-hover-rgb);
 
         --btn-hover-color: hsl(from rgb(var(--color-brand-rgb)) h calc(s - 8) calc(l - 20));
+
+        --focus-box-shadow: 0 0 0 .25rem hsl(from rgb(var(--color-brand-rgb)) h calc(s - 8) calc(l + 30));
     }
 
     h1, .h1, 
@@ -143,6 +145,10 @@
 
         &:hover {
             background: var(--bs-gray-300);
+        }
+
+        &:focus-visible {
+            box-shadow: var(--focus-box-shadow);
         }
     }
 
