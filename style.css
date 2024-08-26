@@ -40,7 +40,6 @@
         --bs-link-hover-color-rgb: var(--color-brand-hover-rgb);
 
         --btn-hover-color: hsl(from rgb(var(--color-brand-rgb)) h calc(s - 8) calc(l - 20));
-
     }
 
     h1, .h1, 
