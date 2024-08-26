@@ -16,6 +16,7 @@
     }
 
     :root {
+        /* Our app variables */
         --font-brand: "Figtree", sans-serif;
         --color-brand: #7440F3;
         --color-brand-rgb: 116, 64, 243;
@@ -33,7 +34,6 @@
             0px 12px 9px rgba(25, 10, 67, 0.05),
             0px 20px 15px rgba(25, 10, 67, 0.06),
             0px 32px 24px rgba(25, 10, 67, 0.08);
-
         
         --bs-link-color: var(--color-brand);
         --bs-link-color-rgb: var(--color-brand-rgb);
