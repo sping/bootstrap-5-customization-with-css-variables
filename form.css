@@ -4,7 +4,7 @@
         background-color: var(--app-input-bg);
 
         &:focus {
-            border-color: var(--color-brand);
+            border-color: var(--app-color-brand);
             box-shadow: var(--focus-box-shadow);
         }
     }
@@ -13,12 +13,12 @@
         --bs-form-check-bg: var(--app-input-bg);
 
         &:checked {
-            background-color: var(--color-brand);
-            border-color: var(--color-brand);
+            background-color: var(--app-color-brand);
+            border-color: var(--app-color-brand);
         }
 
         &:focus {
-            border-color: var(--color-brand);
+            border-color: var(--app-color-brand);
             box-shadow: var(--focus-box-shadow);
         }
     }
@@ -33,6 +33,6 @@
 
 @media (min-width: 768px) {
     .signup {   
-        border-left: 8px var(--color-brand) solid;
+        border-left: 8px var(--app-color-brand) solid;
     }
 }

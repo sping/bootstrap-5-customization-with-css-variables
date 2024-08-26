@@ -17,16 +17,16 @@
 
     :root {
         /* Our app variables */
-        --font-brand: "Figtree", sans-serif;
-        --color-brand: #7440F3;
-        --color-brand-rgb: 116, 64, 243;
-        --color-brand-hover-rgb: 56, 24, 136;
+        --app-font-brand: "Figtree", sans-serif;
+        --app-color-brand: #7440F3;
+        --app-color-brand-rgb: 116, 64, 243;
+        --app-color-brand-hover-rgb: 56, 24, 136;
 
         /* Overwrite Bootstrap variables */
         --bs-body-bg: var(--app-body-bg);
-        --bs-primary: var(--color-brand);
-        --bs-primary-rgb: var(--color-brand-rgb);
-        --bs-font-sans-serif: var(--font-brand);
+        --bs-primary: var(--app-color-brand);
+        --bs-primary-rgb: var(--app-color-brand-rgb);
+        --bs-font-sans-serif: var(--app-font-brand);
         --bs-border-radius: 1.25rem;
         --bs-border-color: #C2C2C2;
         --bs-box-shadow: 0px 1px 1px rgba(25, 10, 67, 0.02),
@@ -35,13 +35,13 @@
             0px 20px 15px rgba(25, 10, 67, 0.06),
             0px 32px 24px rgba(25, 10, 67, 0.08);
         
-        --bs-link-color: var(--color-brand);
-        --bs-link-color-rgb: var(--color-brand-rgb);
-        --bs-link-hover-color-rgb: var(--color-brand-hover-rgb);
+        --bs-link-color: var(--app-color-brand);
+        --bs-link-color-rgb: var(--app-color-brand-rgb);
+        --bs-link-hover-color-rgb: var(--app-color-brand-hover-rgb);
 
-        --btn-hover-color: hsl(from rgb(var(--color-brand-rgb)) h calc(s - 8) calc(l - 20));
+        --btn-hover-color: hsl(from rgb(var(--app-color-brand-rgb)) h calc(s - 8) calc(l - 20));
 
-        --focus-box-shadow: 0 0 0 .25rem hsl(from rgb(var(--color-brand-rgb)) h calc(s - 8) calc(l + 30));
+        --focus-box-shadow: 0 0 0 .25rem hsl(from rgb(var(--app-color-brand-rgb)) h calc(s - 8) calc(l + 30));
     }
 
     h1, .h1, 
@@ -60,7 +60,7 @@
         font-weight: 500;
 
         &:focus {
-            box-shadow: 0 0 0 .25rem hsl(from rgb(var(--color-brand-rgb)) h calc(s - 8) calc(l + 30));
+            box-shadow: 0 0 0 .25rem hsl(from rgb(var(--app-color-brand-rgb)) h calc(s - 8) calc(l + 30));
         }
     }
 
@@ -70,8 +70,8 @@
     }
 
     .btn-primary {
-        --bs-btn-bg: var(--color-brand);
-        --bs-btn-border-color: var(--color-brand);
+        --bs-btn-bg: var(--app-color-brand);
+        --bs-btn-border-color: var(--app-color-brand);
         --bs-btn-hover-bg: var(--btn-hover-color);
         --bs-btn-hover-border-color: var(--btn-hover-color);
         --bs-btn-active-bg: var(--btn-hover-color);
@@ -84,14 +84,14 @@
     }
 
     .btn-outline-primary {
-        --bs-btn-color: var(--color-brand);
-        --bs-btn-border-color: var(--color-brand);
+        --bs-btn-color: var(--app-color-brand);
+        --bs-btn-border-color: var(--app-color-brand);
         --bs-btn-hover-bg: var(--btn-hover-color);
         --bs-btn-hover-border-color: var(--btn-hover-color);
-        --bs-btn-active-bg: var(--color-brand);
-        --bs-btn-active-border-color: var(--color-brand);
-        --bs-btn-disabled-color: var(--color-brand);
-        --bs-btn-disabled-border-color: #var(--color-brand)
+        --bs-btn-active-bg: var(--app-color-brand);
+        --bs-btn-active-border-color: var(--app-color-brand);
+        --bs-btn-disabled-color: var(--app-color-brand);
+        --bs-btn-disabled-border-color: #var(--app-color-brand)
     }
 
     .card {
@@ -108,7 +108,7 @@
         --bs-dropdown-bg: var(--bs-white);
         --bs-dropdown-border-width: 0;
         --bs-dropdown-font-size: .875rem;
-        --bs-dropdown-link-active-bg: var(--color-brand);
+        --bs-dropdown-link-active-bg: var(--app-color-brand);
     }
 
     [data-bs-theme=dark] .dropdown-menu {
